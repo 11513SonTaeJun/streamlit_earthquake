@@ -37,7 +37,7 @@ def load_artifacts():
         scaler = joblib.load('earthquake_scaler.pkl')
         # 위경도 매핑 및 위험도 계산을 위해 원본 전처리 데이터 프레임도 필요합니다.
         # 여기서는 파일이 없을 경우를 대비해 예외처리를 하거나 빈 데이터프레임을 방지합니다.
-        df_new = pd.read_csv('earthquake.csv') 
+        df_new = pd.read_csv('earthquake(1).csv') 
         # Colab 로직 복사: 필요한 컬럼만 필터링 된 데이터 구축 가정
         if 'cluster_4' not in df_new.columns and '규모' in df_new.columns:
             # 만약 원본만 저장했다면 앱 실행 시점에 빠르게 필터링
